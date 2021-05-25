@@ -3,7 +3,7 @@ Mexico
 
 ### Objective
 
-Modify the binary so that it prints the flag instead of "try harder"
+Modify the binary so that it prints the flag instead of `"try harder"`
 
 ### Original code
 
@@ -21,7 +21,7 @@ We can uncover references to this address, and we see that the caller for this f
 
 ### Patch (v1)
 
-In the original code on line `00401642`, we see a comparison being done with `C1`. In the next line, if the value is smaller than `C1`, then we jump to line `00401653`, which prints the `try harder` string
+In the original code on line `00401642`, we see a comparison being done with `C1`. In the next line, if the value is smaller than `C1`, then we jump to line `00401653`, which prints the `"try harder"` string
 
 If we want to call the function to print the flag, we need to make value to be smaller than `C1`.
 
