@@ -19,7 +19,7 @@ This is the code block we want to call at address `00401500`, which prints out t
 
 We can uncover references to this address, and we see that the caller for this function lies in line `0040164C`, which is in the original code flow
 
-### Patch (v1)
+### Patch v1: Changing the value for comparing
 
 In the original code on line `00401642`, we see a comparison being done with `C1`. In the next line, if the value is smaller than `C1`, then we jump to line `00401653`, which prints the `"try harder"` string
 
@@ -29,8 +29,17 @@ The first version of the patch can be done by changing `C1` to something small, 
 
 ![image](https://user-images.githubusercontent.com/7328587/119464896-c6db0d80-bd75-11eb-9c94-ae69468807f1.png)
 
-### Patch (v2)
+### Patch v2: Changing the comparison operation
 
 The second way to trigger this is to change the comparison logic to be `jg` instead of `jle`
 
 ![image](https://user-images.githubusercontent.com/7328587/119465080-ef630780-bd75-11eb-8456-5234355e0758.png)
+
+### Patch v3: Changing the function call
+
+We can change the function call entirely to call the function for printing out the flag
+
+![image](https://user-images.githubusercontent.com/7328587/119499760-9b6a1a00-bd99-11eb-8bfe-1efd649aee8e.png)
+
+On line `004013DD` where the break point is, we changed it entirely by modifying the hex value to `E8 1E010000`, which translates to jumping to address `401500`, which is the memory address of the flag function
+
