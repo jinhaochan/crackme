@@ -9,7 +9,7 @@ Modify the binary so that it prints the flag instead of `"try harder"`
 
 ![image](https://user-images.githubusercontent.com/7328587/119462656-88dcea00-bd73-11eb-813e-0cf03684fd92.png)
 
-Here we see the code printing out the "try harder" in line `00401653`
+Here we see the code printing out the `"try harder"` in line `00401653`
 
 ### Code we want to call
 
