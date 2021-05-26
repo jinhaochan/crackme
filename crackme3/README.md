@@ -40,3 +40,8 @@ Lines `00401121` to `00401123` sends a signal to close to program
 To bypass the closing nag, we modify line `0040110D` to `jmp 00401121`. What this does it that it skips the closing nag code entirely, and jumps unconditionally to send a close signal.
 
 ![image](https://user-images.githubusercontent.com/7328587/119614390-cfdce500-be30-11eb-81fb-014c8418ac30.png)
+
+Another way to do this is to `nop` the entire code block that generates the closing nag
+
+![image](https://user-images.githubusercontent.com/7328587/119615646-344c7400-be32-11eb-9e54-d90597e83ca6.png)
+
