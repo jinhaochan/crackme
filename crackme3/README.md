@@ -4,6 +4,7 @@ crackme3
 The goal is to remove the nags, and to register the software
 
 ### Removing nags
+<hr>
 
 When opening this program closing this program, it shows two "nagging" screens.
 
@@ -45,3 +46,11 @@ Another way to do this is to `nop` the entire code block that generates the clos
 
 ![image](https://user-images.githubusercontent.com/7328587/119615646-344c7400-be32-11eb-9e54-d90597e83ca6.png)
 
+### Registering software
+<hr>
+
+Registering the software, or making it print the register string, is done by toggling the jump logic on line `00401D8` from `je` to `jne`
+
+![image](https://user-images.githubusercontent.com/7328587/119651481-a5525280-be57-11eb-9b45-ff688960a5c3.png)
+
+![image](https://user-images.githubusercontent.com/7328587/119651544-b602c880-be57-11eb-89ae-7279ac65250f.png)
