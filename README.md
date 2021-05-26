@@ -7,7 +7,11 @@ Assembly code reference: https://css.csail.mit.edu/6.858/2014/readings/i386/c17.
 Generic info
 ---
 
+### Function return value storage
+
 `eax` stores the return value of a function call
+
+### Bytes of registers
 
 `al` uses the first byte of a register
 
