@@ -35,7 +35,7 @@ Lines `004010FF` to `00401107` close the current dialog box
 
 Lines `0040110D` to `0040111B` will create the closing nag
 
-Line `00401121` to `00401123` sends a signal to close to program
+Lines `00401121` to `00401123` sends a signal to close to program
 
 To bypass the closing nag, we modify line `0040110D` to `jmp 00401121`. What this does it that it skips the closing nag code entirely, and jumps unconditionally to send a close signal.
 
