@@ -8,10 +8,12 @@ Generic info
 ---
 
 ### Function return value storage
+<hr>
 
 `eax` stores the return value of a function call
 
 ### Bytes of registers
+<hr>
 
 `al` uses the first byte of a register
 
@@ -28,3 +30,8 @@ Generic info
 |                               0110 0111 | ------> AL
 
 |                     0100 0101           | ------> AH
+
+### NOP and jumps
+<hr>
+
+Typically we can remove or go around code logics by `nop-ping` the code, or changing the logic of the jumps `jmp`, `je`, `jg`, `jl`
