@@ -49,7 +49,7 @@ Another way to do this is to `nop` the entire code block that generates the clos
 ### Registering software
 <hr>
 
-Registering the software, or making it print the register string, is done by toggling the jump logic on line `00401D8` from `je` to `jne`
+Registering the software, or making it print the "REGISTERED" string, is done by toggling the jump logic on line `00401D8` from `je` to `jne`
 
 ![image](https://user-images.githubusercontent.com/7328587/119651481-a5525280-be57-11eb-9b45-ff688960a5c3.png)
 
