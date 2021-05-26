@@ -25,10 +25,11 @@ to remove this, we replace everything with a nop from `004010A7` to `004010B6`
 Now when we start the program, the nag will not appear due to the bunch of nops
 
 ### Changing the string on clicking `Re-Check`
+<hr>
 
 When we click `Re-Check`, we find the strings that is updated on the dialog box, which is `Nag not removed!`
 
-We where that string is called, and set a breakpoint on it
+We find where that string is called, and set a breakpoint on it
 
 ![image](https://user-images.githubusercontent.com/7328587/119677457-52859480-be71-11eb-860a-7f6862bbf2f9.png)
 
