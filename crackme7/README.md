@@ -22,3 +22,6 @@ This changes the logic flow, and `Registered` is displayed
 
 ![image](https://user-images.githubusercontent.com/7328587/119836546-65ad6880-bf34-11eb-8d53-163d88740c74.png)
 
+To understand why this works, `test eax, eax` checks if `eax` is zero. Beacause originally both 5 was placed into `eax` and `ecx`, when `sub eax, ecx` was called, the result zero was stored into `eax`, thus `test eax, eax` results to true.
+
+By changing the value of either `eax` or `ecx` so that the subtraction results to anything but 0, we can bypass the jump
