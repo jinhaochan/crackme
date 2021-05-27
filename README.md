@@ -31,10 +31,13 @@ Generic info
 
 |                     0100 0101           | ------> AH
 
-### NOP and jumps
-<hr>
+`byte` = 1 byte
 
-### Code modification
+`word` = 2 bytes
+
+`dword` = 4 bytes
+
+### NOP and jumps
 <hr>
 
 Typically we can remove or go around code logics by `nop-ping` the code, or changing the logic of the jumps `jmp`, `je`, `jg`, `jl`
