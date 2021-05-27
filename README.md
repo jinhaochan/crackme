@@ -34,4 +34,11 @@ Generic info
 ### NOP and jumps
 <hr>
 
+### Code modification
+<hr>
+
 Typically we can remove or go around code logics by `nop-ping` the code, or changing the logic of the jumps `jmp`, `je`, `jg`, `jl`
+
+When we see a conditional jump, most likely there is a `test` or `cmp` above that sets the Zero Flag to a value which tells it to jump or not
+
+
